@@ -24,6 +24,7 @@ export default antfu(
       ...eslintPluginReadableTailwind.configs.error.rules,
 
       'node/prefer-global/process': 'off',
+      'no-console': 'off',
     },
   },
 );
