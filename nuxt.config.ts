@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
   runtimeConfig: {
+    tmdbAccessToken: process.env.TMDB_ACCESS_TOKEN,
     public: {
       tmdbBaseUrl: 'https://api.themoviedb.org/3',
     },

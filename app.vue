@@ -12,6 +12,9 @@ function isHello(hello: unknown): hello is IHello {
 if (isHello(hello.value)) {
   console.log(hello.value.hello);
 }
+
+const { data } = await useFetch('/api/authentication');
+console.log(data.value);
 </script>
 
 <template>
